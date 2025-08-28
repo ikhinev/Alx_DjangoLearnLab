@@ -1,8 +1,7 @@
 # Update Operation
 
 ```python
-b.title = "Nineteen Eighty-Four"
-b.save()
-Book.objects.get(pk=b.pk).title
+book.title = "Nineteen Eighty-Four"
+book.save()
+book.title
 # Expected: 'Nineteen Eighty-Four'
-
