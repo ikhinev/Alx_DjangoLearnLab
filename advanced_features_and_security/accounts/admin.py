@@ -11,5 +11,5 @@ class CustomUserAdmin(UserAdmin):
         (None, {'fields': ('date_of_birth', 'profile_photo')}),
     )
 
-# Register the admin manually
+# Register the CustomUser with the admin
 admin.site.register(CustomUser, CustomUserAdmin)
