@@ -1,0 +1,5 @@
+<form method="post" action="{% url 'bookshelf:search' %}">
+    {% csrf_token %}
+    <input name="q" placeholder="Search books">
+    <button type="submit">Search</button>
+</form>
