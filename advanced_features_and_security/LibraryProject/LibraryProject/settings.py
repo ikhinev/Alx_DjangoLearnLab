@@ -95,3 +95,29 @@ SESSION_COOKIE_SECURE = True
 CSP_DEFAULT_SRC = ("'self'",)
 CSP_SCRIPT_SRC = ("'self'", "https://cdnjs.cloudflare.com")
 CSP_STYLE_SRC = ("'self'", "https://fonts.googleapis.com")
+
+# ---------------------------
+# 🔒 HTTPS & Security Settings
+# ---------------------------
+
+# Redirect all HTTP → HTTPS
+SECURE_SSL_REDIRECT = True  
+
+# Enforce Strict-Transport-Security (HSTS) for 1 year
+SECURE_HSTS_SECONDS = 31536000  
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True  
+SECURE_HSTS_PRELOAD = True  
+
+# Ensure cookies are sent over HTTPS only
+SESSION_COOKIE_SECURE = True  
+CSRF_COOKIE_SECURE = True  
+
+# Prevent browsers from MIME-type sniffing
+SECURE_CONTENT_TYPE_NOSNIFF = True  
+
+# Enable browser XSS protection
+SECURE_BROWSER_XSS_FILTER = True  
+
+# Prevent clickjacking
+X_FRAME_OPTIONS = "DENY"  
+
