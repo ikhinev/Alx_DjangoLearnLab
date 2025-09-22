@@ -121,7 +121,3 @@ SECURE_BROWSER_XSS_FILTER = True
 # Prevent clickjacking
 X_FRAME_OPTIONS = "DENY"  
 
-# Secure proxy SSL header
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-
