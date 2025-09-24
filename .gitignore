@@ -16,8 +16,13 @@ venv/
 # Migrations
 */migrations/__pycache__/
 */migrations/*.pyc
+<<<<<<< HEAD
 */migrations/*.pyo
 */migrations/*.py~
 
 # OS files
+=======
+
+# OS
+>>>>>>> 822d3a6 (Complete: Django project with custom serializers and nested models)
 .DS_Store
